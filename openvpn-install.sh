@@ -1118,7 +1118,7 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/env openvpn --config ${OVPN_DIR}/server.conf
+ExecStart=/usr/sbin/openvpn --config ${OVPN_DIR}/server.conf
 Restart=on-failure
 
 [Install]
